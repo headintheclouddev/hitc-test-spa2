@@ -3,4 +3,8 @@
  * @NScriptType SpaServerScript
  */
 
-export const initializeSpa = (scriptContext) => {}; // eslint-disable-line
+import log from 'N/log';
+
+export const initializeSpa = (scriptContext: {}) => {
+  log.audit('initializeSpa', `Starting at ${new Date()}: ${JSON.stringify(scriptContext)}.`);
+}
